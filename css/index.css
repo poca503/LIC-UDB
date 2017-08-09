@@ -1,0 +1,126 @@
+body {
+background: rgba(121,143,59,1);
+background-image: url(../img/background.jpg);
+font-size:16px;
+margin:30px 10px;
+}
+caption {
+font-family:'CreativeZoo';
+font-weight:900;
+font-size:2.6em;
+color:Lavender;
+letter-spacing: 5px;
+text-shadow: 0 0 2px #fff,
+-1px -1px 0 hsl(80,70%,35%),
+-2px -2px 1px hsl(80,70%,35%),
+-2px -2px 2px hsl(80,10%,15%);
+}
+table {
+margin: auto;
+border:1px black solid;
+border-radius:5px;
+min-width:400px;
+font-family:'CreativeZoo';
+font-size: 18px;
+margin-bottom: 20px;
+}
+table th {
+font-weight: bold;
+color:#fff;
+background-color: #444;
+border-bottom:1px #000 solid;
+padding:8px;
+}
+table td {
+padding:6px;
+}
+/*Primera fila, primera celda*/
+table tr:first-child td:first-child {
+border-radius:5px 0px 0px 0px;
+}
+/*Primera fila, última celda*/
+table tr:first-child td:last-child {
+border-radius:0px 5px 0px 0px;
+}
+/*Última fila, primera celda*/
+table tr:last-child td:first-child {
+border-radius:0px 0px 0px 5px;
+}
+/*Última fila, última celda*/
+table tr:last-child td:last-child {
+border-radius:0px 0px 5px 0px;
+}
+table tr:nth-child(2n) {
+background: #87CEEB;
+}
+table tr:nth-child(2n+1){
+background: #ADD8E6;
+}
+table th tr:not(:first-child):hover, table:not(.header) tr:hover {
+background:#E0FFFF;
+}
+table tr:nth-child(2n) {
+background: #87CEEB;
+}
+table tr:nth-child(2n+1){
+background: #ADD8E6;
+}
+h1 {
+font-family:'CreativeZoo';
+text-align: center;
+font-weight:700;
+font-size:15pt;
+letter-spacing: 2px;
+background-color: white;
+}
+p {
+font-family:'CreativeZoo';
+text-align: center;
+font-weight:700;
+font-size:15pt;
+letter-spacing: 2px;
+color: white;
+}
+div{
+width: 26.66%;
+border:solid 0px #000000;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+background: rgba(0,0,0,0.5);
+float: left;
+margin-right: 5%;
+}
+.resultado{
+background-color: yellow;
+width: 85%;
+margin: auto;
+resultado{
+background-color: yellow;
+width: 85%;
+margin: auto;
+}
+hr {
+background-color:lavender;
+height:7px;
+width:98%;
+}
+table.header tr:first-child {
+font-weight: bold;
+color:#fff;
+background-color: #444;
+border-bottom:1px #000 solid;
+}
+/*Todas las filas a partir de la segunda*/
+table.header tr:nth-child(n+2) {
+text-align: right;
+}
+/*Aca empieza a declarar las fuentes*/
+/* Incluyendo la fuente Creative Zoo */
+@font-face {
+font-family: 'CreativeZoo';
+src: url('../fonts/creativzoo.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+font-variant: normal;
+}

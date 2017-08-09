@@ -1,0 +1,8 @@
+/* Incluyendo la fuente Creative Zoo */
+@font-face {
+font-family: 'CreativeZoo';
+src: url('../fonts/creativzoo.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+font-variant: normal;
+}
