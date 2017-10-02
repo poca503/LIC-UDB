@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>eWallet | Registro</title>
+	<script type="text/javascript" src="../js/login.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+<body id="regis">
+<header>
+	<h1><img src="../img/logo.png"><nav class="topnav">
+
+      <a class="active" href="../index.html">Inicio</a>
+      <a id="loga" href="login.html">Ingresar</a>
+      <a id="loga" href="registro.html">Registrarse</a>
+  
+</h1>
+	
+  </nav>
+
+</header>
+<section>
+	
+	<article>
+
+			<form name="registro"> 
+ 
+           
+      <article id="datos_generales">
+
+            <h4>Nombres: </h4><br>
+           <input name="nombre" id="nombre" type="text" class="Input" value="" onkeypress="nomb()" size="20" required /><br><br>
+
+           <h4>Apellidos: </h4><br>
+           <input name="apellido" type="text" id="apellido" class="Input"  onkeypress="ape()"  value="" size="20" required/><BR><BR> 
+
+           <h4>E-mail: </h4><br>
+           <input name="email" type="email" id="email" class="Input" value="" onkeypress="mail()" size="20" required/><BR><BR>
+
+           <h4>Contraseña: </h4><br>
+           <input name="password" id="pass" type="password" class="Input" value="" onkeypress="contra()" size="20" required/>&nbsp;<img id="ojo" onclick="mostrar()" src="../img/eye.png"><br><br>
+
+           <h4>Dirección: </h4><br>
+            &nbsp;&nbsp;<label>Departamento:</label>
+            &nbsp;&nbsp;<select required>
+                            <option value="SS">San Salvador</option>
+                            <option value="AG">Aguachapan</option>
+                            <option value="SA">Santa Ana</option>
+                            <option value="SO">Sonsonate</option>
+                            <option value="CH">Chalatenango</option>
+                            <option value="LL">La Libertad</option>
+                            <option value="CU">Cuscatlán</option>
+                            <option value="LP">La Paz</option>
+                            <option value="CA">Cabañas</option>
+                            <option value="SV">San Vicente</option>
+                            <option value="US">Usulután</option>
+                            <option value="SM">San Miguel</option>
+                            <option value="MO">Morazán</option>
+                            <option value="LU">La Unión</option>
+                          </select><br><br>
+              &nbsp;&nbsp;<label>Municipio:</label><br>
+              &nbsp;&nbsp;<input name="municipio" type="text" id="municipio" class="Input" value="" size="20" required/><BR><BR>
+              &nbsp;&nbsp;<label>Colonia:</label><br>
+              &nbsp;&nbsp;<input name="colonia" type="text" id="colonia" class="Input" value="" size="20" required/><BR><BR>
+              &nbsp;&nbsp;<label>Calle o pasaje , #CASA:</label><br>
+              &nbsp;&nbsp;<input name="calle" type="text" id="calle" class="Input" value="" size="20" required/><BR><BR>
+              <h4>Fecha de nacimiento:</h4><br>
+              <input name="fecha" type="date" id="fecha" class="Input" value="" size="20" required/><BR><BR>
+              </article>
+
+
+
+              <article id="otros">
+              <h4>Preguntas de Seguridad: </h4><br>
+              <p>Responda las siguientes preguntas para la seguridad de su cuenta , si no tiene respuesta , invente una que pueda recordar.</p>
+
+                &nbsp;&nbsp;<h4>1- ¿Cual es tu comida favorita?</h4><br>
+                &nbsp;&nbsp;<input name="pre1" type="text" id="pre1" class="Input" value="" size="20" required/><BR>
+                &nbsp;&nbsp;<h4>1- ¿Marca de autos favorita?</h4><br>
+                &nbsp;&nbsp;<input name="pre2" type="text" id="pre2" class="Input" value="" size="20" required/><BR>
+                &nbsp;&nbsp;<h4>1- ¿Nombre tu primer novi@?</h4><br>
+                &nbsp;&nbsp;<input name="pre3" type="text" id="pre3" class="Input" value="" size="20" required/><BR><BR>
+
+              <h4>DUI:</h4><br>
+              <input name="DUI" type="text" id="dui" class="Input" value="" size="20" onkeypress="duiv()" required/><BR><BR>
+
+              <h4>NIT:</h4><br>
+              <input name="NIT" type="text" id="nit" class="Input" value="" size="20" onkeypress="nitv()" required/><BR><BR>
+
+              <h4>Telefono Celular:</h4><br>
+              <input name="cel" type="tel" id="tel" class="Input" value="" size="20" onkeypress="telv()" required/><BR><BR>
+
+              
+
+              <br>
+              <input value="Entrar"  target="_parent" onclick="guardar()" type="submit" class="boton"/> 
+              
+
+           
+
+          
+
+		</form>
+	</article>
+</section>
+
+</body>
+</html>
