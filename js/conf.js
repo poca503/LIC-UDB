@@ -102,3 +102,13 @@ function salir(){
 	
 	
 }
+
+function balan(){
+	
+	var ozy=document.getElementById("bala");
+	localStorage.setItem("balan", ozy);
+	
+
+	
+	
+}
